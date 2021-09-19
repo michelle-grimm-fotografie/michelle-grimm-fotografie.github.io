@@ -1,8 +1,9 @@
 <!-- Footer -->
+{% if page.layout == "page" %}
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
         <span class="copyright">&copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
       </div>
       <!-- Social Media -->
@@ -20,7 +21,7 @@
         </ul>
       </div>
       <!-- Legal -->
-      <div class="col-md-3">
+      <div class="col-md-3 text-center">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
             <a href="legal">{{ site.data.sitetext[site.locale].footer.legal | default:
@@ -31,7 +32,6 @@
     </div>
   </div>
 </footer>
-{% if page.layout == "page" %}
 <script>
   fixPageShort();
   function fixPageShort() {

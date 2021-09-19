@@ -9,7 +9,16 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-md-12 text-center">
+      <div class="col-md-3 text-center">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <span class="copyright text-muted">
+              &copy; {{ site.title }} {{ 'now' | date: "%Y" }}
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
         <ul class="list-inline social-buttons">
           {% for link in site.data.sitetext[site.locale].footer.social %}
           <li class="list-inline-item">
@@ -20,6 +29,14 @@
             {% endif %}
           </li>
           {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-3 text-center">
+        <ul class="list-inline legal">
+          <li class="list-inline-item">
+            <a href="legal">{{ site.data.sitetext[site.locale].footer.legal | default:
+              "Privacy Policy" }}</a>
+          </li>
         </ul>
       </div>
     </div>

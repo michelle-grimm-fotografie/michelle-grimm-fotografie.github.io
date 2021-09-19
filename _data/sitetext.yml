@@ -1,17 +1,4 @@
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
-
-# English (default)
-# -----------------
 de: &DEFAULT_DE
-  header: {}
-
   services:
     title: "Leistungen"
     #text: "Lorem ipsum"
@@ -44,8 +31,8 @@ de: &DEFAULT_DE
       - title: "Babybauch, Paar- und Familienfotografie"
         desc: |
           Ihr hättet gerne Fotos von einem besonderen Moment im Leben? Das ungeduldige
-          Warten auf euren kleinen Schatz - Die ganze Familie mal wieder auf einem Bild
-          - Endlich die große Liebe gefunden zu haben.
+          Warten auf euren kleinen Schatz, die ganze Familie mal wieder auf einem Bild,
+          endlich die große Liebe gefunden zu haben.
         icon: fas fa-users
       - title: "Weitere Leistungen"
         desc: |
@@ -53,16 +40,13 @@ de: &DEFAULT_DE
           es Hochzeit, Geburtstagsfeier oder Geburt.
         icon: fas fa-magic
 
-
   portfolio:
-    title: "Portfolio"
+    title: "Galerie"
     #text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
-    closebutton: "Close Project"
 
   timeline:
     title: "Über mich"
-    text: "Lorem ipsum timeline"
     section: timeline
     # left is the default
     #start_align: "left"
@@ -73,34 +57,21 @@ de: &DEFAULT_DE
         image: assets/img/timeline/1.png
       - title: "Fotografenmeisterin"
         year: "2014 - 2015"
-        desc: "Calvin Hollywood, Mario Feil"
-        image: assets/img/timeline/2.jpg
-      - title: "Foto Video Sessner GmbH"
+        desc: "Weiterbildung an der Meisterschule-Fotografie in München"
+        image: assets/img/timeline/2.png
+      - desc: "Foto Video Sessner GmbH in Dachau"
         year: "2015 - heute"
-        desc: "Angestellte Fotografin und Mitarbeiterin im Fotolabor"
+        title: "Angestellte Fotografin und Fotolaborantin"
         image: assets/img/timeline/3.png
       - title: "Selbstständige Fotografin"
         year: "2021 - heute"
-        desc: "Portrait und Reportage"
-        #image: assets/img/timeline/4.jpg
+        desc: ""
+        image: assets/img/timeline/4.png
         # you can enforce the alignment
         align: right
 
-  about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: about
-
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list: []
   team:
     title: "Über mich"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
       - name: "Michelle Grimm"
@@ -109,27 +80,22 @@ de: &DEFAULT_DE
 
   contact:
     title: "Kontakt"
-    text: "Per E-Mail, mobil, WhatsApp oder Instgram - wie ihr wollt"
+    text: "Per E-Mail, Mobil, WhatsApp, Facebook oder Instgram - wie ihr wollt"
     section: contact
 
   footer:
     legal: "Impressum"
     social:
       - url: "mailto:info@michelle-grimm-fotografie.de"
-        text: E-Mail
         icon: "fa fa-envelope"
       - url: "tel:+4917692689692"
-        text: Telefon
         icon: "fa fa-mobile-alt"
       - url: "https://wa.me/4917692689692"
-        text: Whatsapp
         icon: "fab fa-whatsapp"
-      #- url: https://facebook.com
-      #  icon: "fab fa-facebook-f"
+      - url: https://www.facebook.com/MichelleGrimmFotografie/
+        icon: "fab fa-facebook-f"
       - url: https://instagram.com/michelle_grimm_fotografie/
-        text: Instagram
         icon: "fab fa-instagram"
-
 
 de-DE:
   <<: *DEFAULT_DE

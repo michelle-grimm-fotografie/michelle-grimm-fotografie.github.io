@@ -47,14 +47,12 @@ ul.social-buttons {
     li {
       a {
         background-color: $gray-600;
-      &:active,
-      &:focus,
-      &:hover {
-      background-color: $primary;
-      }
-
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $primary;
+        }
       }
     }
-
-}
+  }
 }

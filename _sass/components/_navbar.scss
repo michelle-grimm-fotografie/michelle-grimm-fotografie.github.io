@@ -28,11 +28,11 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: $gray-900;
+        color: $primary;
         @include heading-font;
         &.active,
         &:hover {
-          color: $primary;
+          color: darken($primary, 10%);
         }
       }
     }
@@ -49,14 +49,30 @@
     background-color: transparent;
     .navbar-brand {
       font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+      display: none;
+      /*
+      -webkit-transition: font-size 0.3s;
+      -moz-transition: font-size 0.3s;
+      transition: font-size 0.3s;
+      */
+    }
+    &.impressum {
+      .navbar-brand {
+        display: block;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $primary;
+          }
+        }
+      }
     }
     .navbar-nav {
       .nav-item {
         .nav-link {
           padding: 1.1em 1em !important;
+          color: $gray-900;
         }
       }
     }
@@ -67,14 +83,16 @@
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+        display: block;
       }
       .navbar-nav {
         .nav-item {
           .nav-link {
             color: $primary;
+          }
         }
       }
     }
   }
 }
-}
+
